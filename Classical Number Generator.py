@@ -27,6 +27,7 @@ for i in range (1000):
       numbers.append(roll_die()) # Call the roll_die function to get a number
 
 freq = Counter(numbers) # Use Counter to count frequencies
+print(freq) #shows the frequency
 
 x = sorted(freq.keys())   #[1,2,3,4,5,6]
 y= [freq[val] for val in x]     #[frequency for each value] # Corrected list comprehension
